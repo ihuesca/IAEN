@@ -56,7 +56,6 @@
 #' Nature, 404(6774), 180.
 #'
 #' @export IAEN
-#' @import RGtk2
 #' @import enaR
 #' @import network
 #' @import cheddar
