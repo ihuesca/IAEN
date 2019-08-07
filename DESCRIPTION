@@ -10,6 +10,7 @@ Description: The IAEN package is a tool that provides a graphical user interface
 Imports: enaR, igraph, sna, network, cheddar, bipartite, readxl, writexl, tnet, ggplot2, ggraph, reshape, pryr, cairoDevice, scales, gplots, grDevices, graphics
 Suggests: RGtk2
 License: GPL (>= 2)
+URL: https://github.com/ihuesca/IAEN
 Encoding: UTF-8
 LazyData: TRUE
 RoxygenNote: 6.1.1
