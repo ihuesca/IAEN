@@ -23,4 +23,4 @@ devtools::install_github("ihuesca/IAEN")
 
 ## Manuals
 
-You can learn more about IAEN [here (Spanish version)](https://ihuesca.github.io/IAEN-spanish/).
+You can learn more about IAEN [here (Spanish version)](https://github.com/ihuesca/IAEN-Manual).
