@@ -11,6 +11,11 @@ The IAEN package is a tool that provides a graphical user interface (GUI), allow
 install.packages("RGtk2")
 library(RGtk2)
 
+# Install cairoDevice package
+
+install.packages("cairoDevice")
+library(cairoDevice)
+
 #Install devtools and its dependencies.
 
 install.packages("devtools", dependencies=TRUE)
