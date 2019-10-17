@@ -692,11 +692,13 @@ statU_func <- function(h, ...) {
         Top <- FractionTopLevelNodes(COM1)
         Int <- FractionIntermediateNodes(COM1)
         Bas <- FractionBasalNodes(COM1)
+        Prey <- Bas+Int
+        Predators <- Int+Top
         Herb <- Fraction_Herv(mat)
         Can <- FractionCannibalistic(COM1)
         Loop <- Fraction_Loops(mat)$per
         SW.TL <- ShortWeightedTrophicLevel(COM1, include.isolated = TRUE) #Package:cheddar
-        Omn <- Fraction_Omni(mat, TL = SW.TL)
+        Omn.Frac <- Fraction_Omni(mat, TL = SW.TL)
         GenSD <- sd(TrophicGenerality(COM1))
         VulSD <- sd(TrophicVulnerability(COM1))
         MxSim <- MeanMaximumTrophicSimilarity(COM1)
@@ -711,11 +713,11 @@ statU_func <- function(h, ...) {
         A3 <- has.loops(net)
         A4 <- is.multiplex(net)
         A5 <- is.bipartite(net)
-        att.n <- c("S", "L", "L/S", "C", "Top", "Int", "Bas", "Herb", "Can",
-            "Loop", "Omn", "GenSD", "VulSD", "MxSim", "TL", "ChLg", "ChSD",
+        att.n <- c("S", "L", "L/S", "C", "Top", "Int", "Bas", "Prey", "Predators", "Herb", "Can",
+            "Loop", "Omn.Frac", "GenSD", "VulSD", "MxSim", "TL", "ChLg", "ChSD",
             "Path", "Clust", "Directed", "Hyper", "Loops", "Multiple",
             "Bipartite")
-        att.1 <- c(S, L, LS, C, Top, Int, Bas, Herb, Can, Loop, Omn, GenSD,
+        att.1 <- c(S, L, LS, C, Top, Int, Bas, Prey, Predators, Herb, Can, Loop, Omn.Frac, GenSD,
             VulSD, MxSim, TL, ChLg, ChSD, Path, Clust)
         att.1 <- unlist(lapply(att.1, function(x) format(x, digits = 4,
             nsmall = 4)))
