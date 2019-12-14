@@ -924,7 +924,7 @@ statU_func <- function(h, ...) {
         Bridge.c <- c()
         for (i in 1 : length(Deg)){
             Node <- names(Deg)[i]
-            Nei <- neighbors(gr, Node)
+            Nei <- igraph::neighbors(gr, Node) #igraph
             Bridge.c[i] <- Bet[i]*((1/Deg[i])/sum(1/Deg[Nei]))
         }
         names(Bridge.c) <- names(Deg)
