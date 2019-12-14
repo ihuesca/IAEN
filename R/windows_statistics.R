@@ -919,8 +919,8 @@ statU_func <- function(h, ...) {
                                
     # Bridging_centrality                             
     cent10 <- function(gr, ...) {
-        Bet <- betweenness(gr, normalized = TRUE)
-        Deg <- degree(gr)
+        Bet <- igraph::betweenness(gr, normalized = TRUE) #igraph
+        Deg <- igraph::degree(gr) #igraph
         Bridge.c <- c()
         for (i in 1 : length(Deg)){
             Node <- names(Deg)[i]
