@@ -725,9 +725,7 @@ statU_func <- function(h, ...) {
         colnames(att) <- c("Attribute", "Value")
         return(att)
     }
-
-    # Percentage of herbivores
-
+                               
     # Percentage of herbivores
 
     Fraction_Herv <- function(dat, ...) {
@@ -918,7 +916,23 @@ statU_func <- function(h, ...) {
             "TotDeg", "TotDegNorm")
         return(res)
     }
-
+                               
+    # Bridging_centrality                             
+    cent10 <- function(gr, ...) {
+        Bet <- betweenness(gr, normalized = TRUE)
+        Deg <- degree(gr)
+        Bridge.c <- c()
+        for (i in 1 : length(Deg)){
+            Node <- names(Deg)[i]
+            Nei <- neighbors(gr, Node)
+            Bridge.c[i] <- Bet[i]*((1/Deg[i])/sum(1/Deg[Nei]))
+        }
+        names(Bridge.c) <- names(Deg)
+        Bridge.c <- c(Bridge.c, Mean = mean(Bridge.c), Var = var(Bridge.c), Centralization = NA, Theoretical.max = NA)
+        Bridging_cent <- data.frame(Bridging = Bridge.c)
+        return (Bridging_cent)
+    }
+                               
     # Reachability
     reach <- function(dat, ...) {
         res <- data.frame(reachability(dat)) #Package:sna
@@ -1162,6 +1176,10 @@ statU_func <- function(h, ...) {
                 Degree <- cent9(gr)
                 Centrality <- data.frame(Centrality, Degree)
             }
+            if (top_cb$Brid["active"]) {
+                Bridging <- cent10(gr)
+                Centrality <- data.frame(Centrality, Bridging)
+            }
 
             Centrality[, 2:ncol(Centrality)] <- format(Centrality[, 2:ncol(Centrality)],
                 digits = 3, nsmall = 4)
@@ -1319,7 +1337,7 @@ statU_func <- function(h, ...) {
     statU_window$setTransientFor(Window)
     statU_window$setPosition("center-on-parent")
     statU_window["title"] <- "Statistics - Unweighted matrix"
-    statU_window$setSizeRequest(300, 400)
+    statU_window$setSizeRequest(300, 415)
     statU_window["border-width"] <- 2
     statU_window$setModal(TRUE)
     statU_window$setResizable(FALSE)
@@ -1379,6 +1397,7 @@ statU_func <- function(h, ...) {
     top_cb$Loa <- gtkCheckButton(label = "Load Centrality")
     top_cb$Str <- gtkCheckButton(label = "Stress Centrality")
     top_cb$Deg <- gtkCheckButton(label = "Degree Centrality")
+    top_cb$Brid <- gtkCheckButton(label = "Bridging Centrality")
 
     rea_cb <- gtkCheckButton(label = "Reachability")
     hbox3 <- gtkHBox(FALSE, 2)
