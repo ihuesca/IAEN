@@ -88,7 +88,11 @@ IAEN <- function(h, ...) {
       stop("RGtk2 was not loaded.\n",
            "The execution of IAEN () requires a window system.\n",
            "Install it appropriately according to your operating system.\n")}
-
+    
+    cmd2 <- "devtools::install_github("quicklizard99/cheddar")"
+    eval(parse(text=cmd))   
+    
+    
     ## environmet#######################################
 
     .GlobalEnv$e <- new.env()
