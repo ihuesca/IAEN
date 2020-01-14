@@ -90,7 +90,10 @@ IAEN <- function(h, ...) {
            "Install it appropriately according to your operating system.\n")}
     
     cmd2 <- "devtools::install_github("quicklizard99/cheddar")"
-    eval(parse(text=cmd))   
+    eval(parse(text=cmd2))
+    
+    cmd3 <- "require(cheddar)"
+    eval(parse(text=cmd3))
     
     
     ## environmet#######################################
