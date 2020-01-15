@@ -3,7 +3,6 @@
 export(IAEN)
 import(RGtk2)
 import(cairoDevice)
-import(cheddar)
 import(enaR)
 import(ggplot2)
 import(ggraph)
