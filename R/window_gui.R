@@ -58,7 +58,6 @@
 #' @export IAEN
 #' @import enaR
 #' @import network
-#' @import cheddar
 #' @import readxl
 #' @import writexl
 #' @import ggplot2
@@ -88,12 +87,6 @@ IAEN <- function(h, ...) {
       stop("RGtk2 was not loaded.\n",
            "The execution of IAEN () requires a window system.\n",
            "Install it appropriately according to your operating system.\n")}
-    
-    cmd2 <- "devtools::install_github("quicklizard99/cheddar")"
-    eval(parse(text=cmd2))
-    
-    cmd3 <- "require(cheddar)"
-    eval(parse(text=cmd3))
     
     
     ## environmet#######################################
