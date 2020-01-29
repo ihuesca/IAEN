@@ -4,6 +4,13 @@ repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
 
+TRAVIS_R_VERSION=3.6.2
+R_LIBS_USER=~/R/Library
+R_LIBS_SITE=/usr/local/lib/R/site-library:/usr/lib/R/site-library
+_R_CHECK_CRAN_INCOMING_=false
+NOT_CRAN=true
+R_PROFILE=~/.Rprofile.site
+
 matrix:
   include:
   - os: linux
