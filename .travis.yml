@@ -29,5 +29,3 @@ warnings_are_errors: true
 r_build_args: "--no-manual"
 r_check_args: "--no-manual --as-cran"
 
-r_github_packages: "quicklizard99/cheddar"
-
