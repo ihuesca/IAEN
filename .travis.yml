@@ -1,8 +1,17 @@
 language: r
 
 r:
-  - oldrel
-  - release
+ - 3.4
+ - 3.5
+ - 3.6
+ - oldrel
+ - release
+ - devel
+
+matrix:
+  allow_failures:
+    - r: 3.4
+
 
 repos:
   CRAN: https://cloud.r-project.org
