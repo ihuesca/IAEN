@@ -5,5 +5,5 @@ repos:
   ropensci: http://packages.ropensci.org
 
 
-r_github_packages: devtools::install_github("quicklizard99/cheddar")
+r_github_packages: "quicklizard99/cheddar"
 
