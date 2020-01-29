@@ -1,1 +1,9 @@
+language: r
+
+repos:
+  CRAN: https://cloud.r-project.org
+  ropensci: http://packages.ropensci.org
+
+
+r_github_packages: devtools::install_github("quicklizard99/cheddar")
 
