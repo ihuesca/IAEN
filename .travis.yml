@@ -1,5 +1,10 @@
 language: r
 
+r:
+  - oldrel
+  - release
+  - devel
+  
 TRAVIS_R_VERSION_STRING: 3.6.1
 
 repos:
