@@ -7,8 +7,8 @@ Author: Luis Gerardo Abarca-Areanas, Israel Huesca-Dominguez
 Maintainer: Israel Huesca-Dominguez <ishuesca@uv.mx>
 Depends: R(>= 3.0.0), utils
 Description: The IAEN package is a tool that provides a graphical user interface (GUI), allows data management performing different types of analyses used in ecological networks. Includes visualization and editing of graphics, methods for binary, weighted and bipartite ecological networks. You can also simulate binary networks using some classic models, using the networks topology, n number of repetitions can be produced, and use functions employed in networks of small worlds.
-Imports: enaR, cheddar, igraph, sna, network, bipartite, readxl, writexl, tnet, ggplot2, ggraph, reshape, pryr, cairoDevice, scales, gplots
-Suggests: RGtk2
+Imports: enaR, cheddar, igraph, sna, network, bipartite, readxl, writexl, tnet, ggplot2, ggraph, reshape, pryr, scales, gplots
+Suggests: RGtk2, cairoDevice
 Remotes: quicklizard99/cheddar
 License: GPL (>= 2)
 Encoding: UTF-8
