@@ -1,7 +1,6 @@
 language: r
 
 install:
-  - R CMD INSTALL .
   - R -e 'remotes::install_deps(dependencies = TRUE)'
   
 r:
