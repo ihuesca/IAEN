@@ -16,5 +16,6 @@ repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
 
-
-
+warnings_are_errors: false
+r_build_args: "--no-manual"
+r_check_args: "--no-manual --as-cran"
