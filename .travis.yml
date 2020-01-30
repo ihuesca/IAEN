@@ -9,6 +9,9 @@ matrix:
   allow_failures:
     - r: 3.5
     
+r_github_packages:
+  -quicklizard99/cheddar
+
 repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
