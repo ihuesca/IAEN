@@ -7,7 +7,7 @@ r:
 
 matrix:
   allow_failures:
-    - r: 3.5
+    - r: 3.3
     
 r_github_packages:
   -quicklizard99/cheddar
