@@ -5,6 +5,10 @@ r:
   - release
   - devel
 
+matrix:
+  allow_failures:
+    - r: 3.5
+    
 repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
