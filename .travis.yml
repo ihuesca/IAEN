@@ -1,13 +1,19 @@
 language: r
 
+install:
+  - R -e "0" --args --bootstrap-packrat
+  - R -e 'devtools::install_deps(dep = F)'
+  - R -e "packrat::restore(restart = FALSE)"
+  
+script:
+- R CMD build .
+- R CMD check *tar.gz
 r:
- - 3.2
- - 3.3
- - 3.4
  - oldrel
  - release
  - devel
 
+  
 matrix:
   allow_failures:
     - r: 3.4
@@ -17,7 +23,7 @@ repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
 
-warnings_are_errors: true
+warnings_are_errors: false
 r_build_args: "--no-manual"
 r_check_args: "--no-manual --as-cran"
 
