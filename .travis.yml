@@ -1,7 +1,4 @@
 language: r
-
-install:
-  - R -e 'remotes::install_deps(dependencies = TRUE)'
   
 r:
  - 3.4
