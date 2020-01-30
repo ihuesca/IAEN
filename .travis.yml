@@ -12,7 +12,7 @@ matrix:
   allow_failures:
     - r: 3.4
     
-r_github_packages: devtools::install_github("quicklizard99/cheddar")   
+r_github_packages: "quicklizard99/cheddar"
 
 repos:
   CRAN: https://cloud.r-project.org
