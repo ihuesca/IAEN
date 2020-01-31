@@ -1,10 +1,6 @@
 language: r
 
 sudo: required
-dist: trusty
-cache:
-  - packages
-  - ccache
   
 r:
  - 3.4
@@ -40,13 +36,13 @@ r_binary_packages:
     - cairoDevice
     - RGtk2
     
+r_github_packages: 
+  - quicklizard99/cheddar
+  
 matrix:
   allow_failures:
     - r: 3.4
     
-r_github_packages: 
-  - quicklizard99/cheddar
-
 repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
