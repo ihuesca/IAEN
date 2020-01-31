@@ -94,7 +94,7 @@ statB_func <- function(h, ...) {
     ##### Specialization#####
 
     spe.lev <- function(dat, ...) {
-        res <- H2fun(dat, H2_integer = FALSE) #Package:bipartite
+        res <- H2fun(dat, H2_integer = TRUE) #Package:bipartite
         res <- data.frame(Attribute = names(res), Value = format(res, digits = 3,
             nsmall = 4), row.names = NULL)
         return(res)
