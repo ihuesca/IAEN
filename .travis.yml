@@ -21,7 +21,13 @@ r:
     - libcurl4-openssl-dev
     - libudunits2-dev
    
+r_binary_packages:
+    - cairoDevice
+    - RGtk2
     
+r_github_packages: 
+  - quicklizard99/cheddar
+  
 repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
