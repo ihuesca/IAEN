@@ -4,12 +4,12 @@ The IAEN package is a tool that provides a graphical user interface (GUI), allow
 ## Install on Windows
 
 ```bash
-#Install devtools and its dependencies.
+#Previously install devtools and its dependencies.
 
 install.packages("devtools", dependencies=TRUE)
 library(devtools)
 
-#Previously you need to install the RGtk2 package, after load it to install the GTK + plug-in. 
+#Then you need to install the RGtk2 package, after load it to install the GTK + plug-in. 
 #It is recommended to use R-studio for installation. 
 #Restart R-studio after installation.
 
