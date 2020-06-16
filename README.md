@@ -4,11 +4,16 @@ The IAEN package is a tool that provides a graphical user interface (GUI), allow
 ## Install on Windows
 
 ```bash
+#Install devtools and its dependencies.
+
+install.packages("devtools", dependencies=TRUE)
+library(devtools)
+
 #Previously you need to install the RGtk2 package, after load it to install the GTK + plug-in. 
 #It is recommended to use R-studio for installation. 
 #Restart R-studio after installation.
 
-install.packages("RGtk2")
+devtools::install_github("lawremi/RGtk2/RGtk2")
 library(RGtk2)
 
 # Install cairoDevice package
@@ -16,14 +21,10 @@ library(RGtk2)
 install.packages("cairoDevice")
 library(cairoDevice)
 
-#Install devtools and its dependencies.
-
-install.packages("devtools", dependencies=TRUE)
-library(devtools)
-
 #Install IAEN from github using devtools.
 
 devtools::install_github("ihuesca/IAEN")
+library(IAEN)
 ```
 
 ## Manuals
