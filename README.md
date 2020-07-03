@@ -29,4 +29,4 @@ library(IAEN)
 
 ## Manuals
 
-You can learn more about IAEN here[(Spanish version)]( https://ihuesca.github.io/IAEN-Manual/) [(English version)]( https://ihuesca.github.io/IAEN-Manual/).
+You can learn more about IAEN here[(Spanish version)]( https://ihuesca.github.io/IAEN-Manual/) [(English version)](https://github.com/ihuesca/IAEN-MANUAL-En).
