@@ -1,6 +1,8 @@
 # IAEN
 The IAEN package is a tool that provides a graphical user interface (GUI), allows data management performing different types of analyses used in ecological networks. Includes visualization and editing of graphics, methods for binary, weighted and bipartite ecological networks. You can also simulate binary networks using some classic models, using the networks topology, n number of repetitions can be produced, and use functions employed in networks of small worlds.
 
+Note: we recommend having R, R studio and rtools installed, for stable operation.
+
 ## Install on Windows
 
 ```bash
