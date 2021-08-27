@@ -4,7 +4,7 @@ export(IAEN)
 import(enaR)
 import(cheddar)
 import(cairoDevice)
-import(RGtk2)
+
 import(ggplot2)
 import(ggraph)
 import(gplots)
