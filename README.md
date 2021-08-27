@@ -15,7 +15,7 @@ library(devtools)
 #It is recommended to use R-studio for installation. 
 #Restart R-studio after installation.
 
-devtools::install_github("lawremi/RGtk2/RGtk2")
+install.packages("RGtk2", depend=TRUE)
 library(RGtk2)
 
 # Install cairoDevice package
