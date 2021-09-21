@@ -31,8 +31,10 @@ library(IAEN)
 
 ## Load package
 
+```bash
 library(RGtk2)
 library(IAEN)
+```
 
 ## Manuals
 
