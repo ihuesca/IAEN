@@ -29,6 +29,11 @@ devtools::install_github("ihuesca/IAEN")
 library(IAEN)
 ```
 
+## Load package
+
+library(RGtk2)
+library(IAEN)
+
 ## Manuals
 
 You can learn more about IAEN here[(Spanish version)]( https://ihuesca.github.io/IAEN-Manual/) [(English version)](https://ihuesca.github.io/IAEN-MANUAL-En/).
