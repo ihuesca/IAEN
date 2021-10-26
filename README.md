@@ -12,8 +12,8 @@ install.packages("devtools", dependencies=TRUE)
 library(devtools)
 
 #Then you need to install the RGtk2 package, after load it to install the GTK + plug-in. 
-#It is recommended to use R-studio for installation. 
-#Restart R-studio after installation.
+#It is recommended to use R-project for installation. 
+#Restart R-project after installation.
 
 install.packages("RGtk2", depend=TRUE)
 library(RGtk2)
